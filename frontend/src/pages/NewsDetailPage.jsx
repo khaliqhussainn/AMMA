@@ -15,6 +15,7 @@ const categoryColors = {
   'Clinical Ethics': { bg: 'bg-violet-50', text: 'text-violet-700', dot: 'bg-violet-500' },
   Chapters: { bg: 'bg-blue-50', text: 'text-blue-700', dot: 'bg-blue-500' },
   Announcements: { bg: 'bg-amber-50', text: 'text-amber-700', dot: 'bg-amber-500' },
+  Advocacy: { bg: 'bg-rose-50', text: 'text-rose-700', dot: 'bg-rose-500' },
 };
 
 const NewsDetailPage = () => {
@@ -245,6 +246,22 @@ const NewsDetailPage = () => {
                             </li>
                           ))}
                         </ul>
+                      );
+                    }
+                    if (block.type === 'image') {
+                      return (
+                        <figure key={index} className="my-8">
+                          <img
+                            src={block.src}
+                            alt={block.alt || ''}
+                            className="w-full rounded-2xl object-cover"
+                          />
+                          {block.caption && (
+                            <figcaption className="mt-3 text-sm text-gray-500 font-sans text-center">
+                              {block.caption}
+                            </figcaption>
+                          )}
+                        </figure>
                       );
                     }
                     return null;
