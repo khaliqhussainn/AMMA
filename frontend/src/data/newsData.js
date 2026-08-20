@@ -90,7 +90,7 @@ export const newsArticles = [
     title: 'Advocacy in Action: AMMA President Meets Senator Chris Van Hollen',
     excerpt: "Dr. Mohsin Ansari, AMMA President, met with Senator Chris Van Hollen to present a recognition award on behalf of ICNA and raise pressing humanitarian and healthcare concerns, including the crisis facing medical professionals in Gaza.",
     category: 'Advocacy',
-    date: '2026',
+    date: 'August 20, 2026',
     readTime: '4 min read',
     author: 'AMMA Communications Team',
     authorTitle: 'AMMA National',
